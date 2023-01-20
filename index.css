@@ -1,0 +1,86 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: aliceblue;
+}
+
+.profil-container {
+  margin: 0 auto;
+  width: 70vw;
+  padding-top: 10vw;
+}
+
+.profil-title {
+  font-size: 50px;
+  letter-spacing: 4px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+
+  animation: shine 100s linear infinite;
+  background: url(img/bg.jpg) no-repeat;
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.profil-description {
+  font-family: Roboto;
+  text-align: justify;
+  margin: 0px auto;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* MEDIA */
+@media screen and (max-width: 720px) {
+
+  .profil-container {
+    margin: 0px auto;
+    width: 320px;
+  }
+  .profil-title {
+    font-size: 30px;
+    margin-top: 150px;
+  }
+
+  ul {
+    margin: 0px auto;
+    flex-wrap: wrap;
+    display: flex;
+    width: 200px;
+  }
+
+  ul img {
+    width: 40px;
+  }
+}
+
+/* KEYFRAME */
+
+@keyframes shine {
+  from {
+    background-position: center 0;
+  }
+
+  to {
+    background-position: center 200%;
+  }
+}

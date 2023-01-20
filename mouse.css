@@ -1,0 +1,31 @@
+#mouse {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
+}
+
+#mouse img {
+  width: 30px;
+}
+
+@-webkit-keyframes run {
+  0% {
+    right: 0px;
+  }
+  25% {
+    right: 400px;
+    bottom: 100px;
+  }
+  50% {
+    bottom: 200px;
+    right: 200px;
+  }
+  75% {
+    bottom: 400px;
+    right: 100px;
+  }
+  100% {
+    right: 0px;
+  }
+}

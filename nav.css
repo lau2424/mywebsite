@@ -1,0 +1,82 @@
+nav {
+  width: 110px;
+  height: 100%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+#logo {
+  margin-top: 20px;
+  width: 80%;
+
+  animation: rotation 10s infinite linear;
+}
+
+nav h3 {
+  letter-spacing: .2rem;
+  font-size: 30px;
+  margin-top: 30px;
+  writing-mode: vertical-lr;
+}
+
+.nav-buttom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.nav-buttom img {
+  padding: 10px;
+  cursor: pointer;
+  width: 60px;
+}
+
+/* MEDIA  */
+@media screen and (max-width: 720px) {
+  nav {
+    width: 100%;
+    height: 180px;
+    color: black;
+  }
+
+  #logo {
+    width: 10%;
+    animation: rotation 10s infinite linear;
+  }
+
+  nav h3 {
+    letter-spacing: .2rem;
+    font-size: 30px;
+    margin: 0 auto;
+    writing-mode: horizontal-tb;
+  }
+
+  .nav-buttom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .nav-buttom img {
+    width: 50px;
+  }
+}
+
+/* KEYFRAME */
+
+@keyframes rotation {
+  0% { transform: rotate( 0.0deg) }
+  10% { transform: rotate(14.0deg) }
+  20% { transform: rotate(-8.0deg) }
+  30% { transform: rotate(14.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
+}
